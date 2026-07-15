@@ -16,8 +16,10 @@ img{max-width:100%;display:block}
 .nav{display:flex;align-items:center;gap:20px;font-family:Arial,sans-serif;font-size:.87rem;letter-spacing:.08em;text-transform:uppercase}
 .nav a{text-decoration:none}.nav a:hover,.nav a:focus{color:var(--accent)}
 .icon-btn{border:1px solid var(--line);background:transparent;border-radius:999px;width:40px;height:40px;cursor:pointer;font-size:1rem}
-.hero-banner{position:relative;min-height:580px;display:flex;align-items:flex-end;justify-content:center;padding:64px 24px 58px;background-image:linear-gradient(to bottom,rgba(20,16,13,.03),rgba(20,16,13,.33)),url("../images/bandeau-wordpress.jpg");background-size:cover;background-position:center 15%;border-bottom:1px solid var(--line)}
-.hero-banner-text{text-align:center;color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.65)}
+.hero-banner{position:relative;min-height:580px;display:flex;align-items:flex-end;justify-content:center;padding:64px 24px 58px;overflow:hidden;border-bottom:1px solid var(--line);background:#d8cbb9}
+.hero-banner-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 15%;display:block}
+.hero-banner-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(20,16,13,.03),rgba(20,16,13,.33))}
+.hero-banner-text{position:relative;z-index:2;text-align:center;color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.65)}
 .hero-banner h1{margin:0;font-family:Arial,Helvetica,sans-serif;font-size:clamp(2.2rem,4.2vw,3.7rem);font-weight:400;line-height:1.08;letter-spacing:.015em}
 .hero-banner p{margin:.35rem 0 0;font-family:Arial,Helvetica,sans-serif;font-size:clamp(1.05rem,2vw,1.45rem);letter-spacing:.02em}
 .hero{max-width:var(--max);margin:0 auto;padding:54px 24px 72px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(280px,.75fr);gap:64px;align-items:center}
@@ -58,4 +60,4 @@ body.dark{--paper:#211f1d;--paper-2:#2a2724;--ink:#f2ebe1;--muted:#c0b4a7;--line
 body.dark .site-header{background:rgba(33,31,29,.91)}body.dark .story-card,body.dark .search,body.dark .story-nav a{background:rgba(255,255,255,.03)}body.dark .tool-stack button{background:rgba(33,31,29,.95);color:var(--ink)}
 .empty{display:none;color:var(--muted);padding:20px 0}
 @media(max-width:900px){.hero{grid-template-columns:1fr;gap:35px}.hero-art{max-width:620px}.story-grid{grid-template-columns:1fr 1fr}.reading-tools{position:static;width:auto;height:auto;margin:0 auto;max-width:var(--reading);padding:0 24px}.tool-stack{flex-direction:row;justify-content:flex-end}}
-@media(max-width:650px){.header-inner{padding:0 16px}.nav a{display:none}.hero-banner{min-height:430px;padding:48px 18px 42px;background-position:center 12%}.hero,.section{padding-left:18px;padding-right:18px}.hero{padding-top:36px}.story-grid{grid-template-columns:1fr}.section-head{align-items:stretch;flex-direction:column}.story-card{min-height:auto}.site-footer{flex-direction:column}.story-nav{grid-template-columns:1fr}.story-nav .next{text-align:left}.story-content{font-size:1.08rem}.hero-art{padding:10px 10px 10px 0}}
+@media(max-width:650px){.header-inner{padding:0 16px}.nav a{display:none}.hero-banner{min-height:430px;padding:48px 18px 42px}.hero-banner-image{object-position:center 12%}.hero,.section{padding-left:18px;padding-right:18px}.hero{padding-top:36px}.story-grid{grid-template-columns:1fr}.section-head{align-items:stretch;flex-direction:column}.story-card{min-height:auto}.site-footer{flex-direction:column}.story-nav{grid-template-columns:1fr}.story-nav .next{text-align:left}.story-content{font-size:1.08rem}.hero-art{padding:10px 10px 10px 0}}
