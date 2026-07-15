@@ -1,0 +1,12 @@
+UNE FEMME QUI ÉCRIT — PREMIÈRE MAQUETTE
+
+Contenu récupéré depuis l’export WordPress du 15 juillet 2026 :
+- 3 nouvelles publiées : René, Madeleine, Rachel
+- image d’accueil optimisée pour le Web
+- page d’accueil, pages de lecture, recherche, mode sombre, réglage de la taille du texte
+
+IMPORTANT
+Cette maquette n’est pas encore connectée au nom de domaine unefemmequiecrit.fr.
+Ne résiliez pas WordPress et ne changez pas les réglages du domaine à ce stade.
+
+Pour tester localement : ouvrez index.html dans un navigateur.
